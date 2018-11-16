@@ -16,7 +16,9 @@ import lombok.Data;
  */
 @Data
 public class NortrailStatsTurerHeadfTrackfDto implements IDao {
-	
+	private String fromDate = "";
+	private String toDate = "";
+	private Integer nrDaysBack = 0;
 	
 	//HEADF
 	private String heavd = ""; //Key	
