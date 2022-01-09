@@ -2,7 +2,7 @@ package no.systema.jservices.nortrailstats.services;
 
 import java.util.List;
 
-import org.apache.logging.log4j.*;
+import org.slf4j.*;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import no.systema.jservices.nortrailstats.dto.NortrailStatsTurerHeadfTrackfDto;
@@ -10,7 +10,7 @@ import no.systema.jservices.common.dao.GenericObjectMapper;
 import no.systema.jservices.common.util.StringUtils;
 
 public class NortrailStatsMainObjectDaoServiceImpl implements NortrailStatsMainObjectDaoService{
-	private static final Logger logger = LogManager.getLogger(NortrailStatsMainObjectDaoServiceImpl.class.getName());
+	private static final Logger logger = LoggerFactory.getLogger(NortrailStatsMainObjectDaoServiceImpl.class.getName());
 	
 	@Override
 	public List<NortrailStatsTurerHeadfTrackfDto> findTurerTEI(NortrailStatsTurerHeadfTrackfDto dao) {
